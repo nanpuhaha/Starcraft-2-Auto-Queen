@@ -21,7 +21,7 @@ def boxSelect(x1,y1,x2,y2):
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x2,y2,0,0)
 
 def tap(char, count):
-    for i in range(count):
+    for _ in range(count):
         shell.SendKeys(char)
         time.sleep(0.01)
 
